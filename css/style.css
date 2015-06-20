@@ -9,11 +9,15 @@ body {
 }
 
 @media (max-width: 768px) {
-	.all .col-md-2, .all .col-md-3, .navbar-collapse, .navbar-right, #img-header .col-md-2, #navbar-bottom, .social {
+	.all .col-md-2,
+	.all .col-md-3,
+	.navbar-collapse,
+	.navbar-right,
+	#navbar-bottom,
+	.social {
 		display: none;
 	}
 }
-
 
 @media (max-width: 1200px) {
 	.all .col-md-3 p {
@@ -29,8 +33,8 @@ body {
 .navbar-fixed-top {
 	height: 60px;
 	background-color: #fefefe;
-	box-shadow: 0 0 3px black;
-	-webkit-box-shadow: 0 0 3px black;
+	box-shadow: 0 0 3px #000000;
+	-webkit-box-shadow: 0 0 3px #000000;
 }
 
 .navbar-brand img {
@@ -58,12 +62,16 @@ body {
 
 /*container css*/
 .all {
-	margin-top: 80px;
 	height: 100%;
+	margin-top: 80px;
 }
 
-#img .row {
+#images .row {
 	margin: 0;
+	padding: 0;
+}
+
+.thumbnails {
 	padding: 0;
 }
 
@@ -71,21 +79,17 @@ body {
 	list-style-type: none;
 }
 
-.thumbnails {
-	padding: 0;
-}
-
 .thumbnail {
+	position: relative;
 	height: 265px;
 	width: 260px;
 	max-width: 100%;
 	margin-right: 30px;
-	position: relative;
 }
 
 .thumbnail h4 {
-	font-size: 14px;
 	padding: 10px 10px 0;
+	font-size: 14px;
 	color: #36382b;
 }
 
@@ -104,12 +108,12 @@ body {
 }
 
 #sale {
-	background-color: #8dc54a;
-	border: none;
-	padding: 0;
 	position: absolute;
 	top: 15px;
 	left: 15px;
+	padding: 0;
+	background-color: #8dc54a;
+	border: none;
 	border-radius: 2px;	
 }
 
@@ -118,13 +122,12 @@ body {
 }
 
 #price {
-	background-color: #ffffff;
-	border: none;
-	padding: 3px;
-	padding-left: 0;
 	position: absolute;
 	top: 145px;
 	left: 15px;
+	padding: 3px 0;
+	background-color: #ffffff;
+	border: none;
 	border-radius: 2px;
 }
 
@@ -136,11 +139,11 @@ body {
 /*footer css*/
 
 footer {
-	background-color: #ffffff;
-	height: 115px;
 	position: absolute;
-	left: 0;
 	right: 0;
+	left: 0;
+	height: 115px;
+	background-color: #ffffff;
 }
 
 footer .row {
@@ -153,8 +156,8 @@ footer .row {
 
 .muted a {
 	margin-top: 0;
-	text-decoration: none;
 	color: #a2a2a2;
+	text-decoration: none;
 }
 
 .muted a:hover {
@@ -162,7 +165,6 @@ footer .row {
 }
 
 #navbar-bottom {
-	text-align: center;
 	margin: 0 auto;
 }
 
@@ -171,8 +173,8 @@ footer .row {
 }
 
 #navbar-bottom li {
-	background-color: #eeeeee;
 	margin-left: -5px;
+	background-color: #eeeeee;
 }
 
 #navbar-bottom a:hover {
@@ -185,9 +187,9 @@ footer .row {
 }
 
 .social i {
+	padding-top: 5px;
+	padding-right: 33px;
 	color: #c9c9c9;
-	padding: 5px;
-	padding-right: 27px;
 }
 
 .social i:hover {
